@@ -32,9 +32,15 @@
                 <ListBoxItem Content="Nothing" />
             </ListBox>
 
-            <ListBox Grid.Row="1">
-                <TextBox></TextBox>
-            </ListBox>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+
+                <TextBox Grid.Column="0"></TextBox>
+                <Button Grid.Column="1" Content="Send"></Button>
+            </Grid> 
         </Grid>
 
     </Grid>
