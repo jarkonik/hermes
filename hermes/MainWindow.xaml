@@ -20,28 +20,7 @@
         </ListBox>
 
         <Grid Grid.Column="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="100"/>
-            </Grid.RowDefinitions>
-   
-            <ListBox Grid.Row="0">
-                <ListBoxItem Content="Hi!" />
-                <ListBoxItem Content="Hi" />
-                <ListBoxItem Content="What's up?" />
-                <ListBoxItem Content="Nothing" />
-            </ListBox>
-
-            <Grid Grid.Row="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="4*" />
-                    <ColumnDefinition Width="1*" />
-                </Grid.ColumnDefinitions>
-
-                <TextBox Grid.Column="0"></TextBox>
-                <Button Grid.Column="1" Content="Send"></Button>
-            </Grid> 
+            <local:Conversation />
         </Grid>
-
     </Grid>
 </Window>
